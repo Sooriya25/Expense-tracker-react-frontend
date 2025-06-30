@@ -9,7 +9,6 @@ const IncomeOverview = ({transactions, onAddIncome}) => {
     useEffect(() => {
         const result = prepareIncomeBarChartData(transactions);
         setChartData(result);
-        console.log("chartData", result);
 
         return () => {};
     }, [transactions]);
