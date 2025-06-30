@@ -98,21 +98,22 @@ const Signup = () => {
               value={email}
               onChange={({target}) => setEmail(target.value)}
               label = "Email Address"
-              placeholder='alan@example.com'
+              placeholder='Enter your email'
               type='text'
             />
+            </div>
 
             <div className="col-span-2">
               <Input
                 value={password}
                 onChange={({target}) => setPassword(target.value)}
-                label = "Passord"
+                label = "Password"
                 placeholder='Min 8 characters'
                 type='password'
               />
             </div>
 
-          </div>
+          
 
           {error && <p className='text-red-500 text-xs pb-2.5'>{error}</p>}
           
