@@ -1,12 +1,37 @@
-# React + Vite
+# MERN Stack Expense Tracker App 💰
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-featured **Expense Tracker** built with the **MERN Stack** (MongoDB, Express.js, React.js, Node.js) that allows users to **securely manage their income and expenses**. The app includes **JWT-based authentication**, clean and responsive UI with **Tailwind CSS**, and an option to **download income/expense data as an Excel sheet**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React.js, Tailwind CSS, Axios, React Router DOM
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose
+- **Authentication**: JSON Web Tokens (JWT), bcryptjs
+- **File Export**: SheetJS (xlsx) for Excel download
+- **State Management**: Context API
+- **Styling**: Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🔐 **User Authentication**
+  - Secure login/register with JWT
+  - Protected routes and token storage in `localStorage`
+
+- 🧾 **Expense & Income Management**
+  - Add, view, edit, and delete expenses and incomes
+  - Each user sees only their own data
+
+- 📤 **Download Excel Report**
+  - Export expense or income list to `.xlsx` format
+  - Easy to share or archive financial data
+
+- 🎨 **Responsive UI with Tailwind**
+  - Clean, modern design
+  - Fully responsive on all devices
+
+- 🧠 **Global State with Context API**
+  - Manages authentication state and transaction data
